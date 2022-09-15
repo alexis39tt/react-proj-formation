@@ -1,3 +1,16 @@
+.navbar-brand .nav-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 1.7rem
+}
+
+.nav-title{
+  color: white;
+  margin: 0 20px;
+}
+
 .image{
     overflow: hidden;
 }
@@ -7,12 +20,32 @@
     padding: 20px;
     cursor: pointer;
     transition: 0.3s;
-    transition-delay: 0s;
+    position: relative;
 }
 
 .card:hover {
     transform: scale(1.02);
-    transition-delay: 0.3s;
+}
+
+.card:hover .link-icon{
+  visibility: visible;
+}
+
+.link-icon{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+.link-icon i{
+  color: #363636;
+  font-size: 2rem;
 }
 
 .card-header{
@@ -53,10 +86,10 @@
     width: 64px;
     height: 64px;
     margin: 8px;
-    border: 8px solid rgb(0, 0, 0);
+    border: 8px solid #363636;
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: rgb(0, 0, 0) transparent transparent transparent;
+    border-color: #363636 transparent transparent transparent;
   }
   .lds-ring div:nth-child(1) {
     animation-delay: -0.45s;
