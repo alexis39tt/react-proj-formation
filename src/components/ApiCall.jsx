@@ -18,7 +18,7 @@ function ApiCall() {
 
     return (<>
         {!news && <div className="spinner"><div className="lds-ring"><div></div><div></div><div></div><div></div></div></div>}
-        {news && news.data.map((el, i) => <NewsCard info={el} key={i} />)}
+        {news?.data.map((el, i) => <NewsCard info={el} key={i} />)}
     </>);
 }
 

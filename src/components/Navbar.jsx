@@ -8,7 +8,6 @@ function Navbar() {
                 <h1 className="nav-title">Formik - API project</h1>
                 <div className="navbar-start">
                     <a href="/" className="navbar-item">Form</a>
-                    <a href="/result" className="navbar-item">Risultati</a>
                     <a href="/api" className="navbar-item">News (API)</a>
                 </div>
             </div>

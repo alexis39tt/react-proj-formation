@@ -1,0 +1,25 @@
+form{
+    width: 500px;
+    margin: 200px auto;
+    padding: 20px 30px;
+    border: 2px solid #363636;
+    border-radius: 10px;
+}
+
+form div.inputs-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 30px;
+    position: relative;
+}
+
+.error{
+    position: absolute;
+    right: 0;
+    top: 25px;
+    color: crimson;
+}
+
+label{
+    font-weight: bold;
+}
