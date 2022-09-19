@@ -1,5 +1,6 @@
 import "bulma/css/bulma.css";
 import "./NewsCard.css"
+import { Link } from "react-router-dom"
 
 function Navbar() {
     return (
@@ -7,8 +8,8 @@ function Navbar() {
             <div className="navbar-brand">
                 <h1 className="nav-title">Formik - API project</h1>
                 <div className="navbar-start">
-                    <a href="/" className="navbar-item">Form</a>
-                    <a href="/api" className="navbar-item">News (API)</a>
+                    <Link to="/" className="navbar-item">Form</Link>
+                    <Link to="/api" className="navbar-item">News (API)</Link>
                 </div>
             </div>
         </nav>
