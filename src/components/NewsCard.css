@@ -1,4 +1,4 @@
-.navbar-brand .nav-title{
+.navbar-brand .nav-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,32 +6,32 @@
   font-size: 1.7rem
 }
 
-.nav-title{
+.nav-title {
   color: white;
   margin: 0 20px;
 }
 
-.image{
-    overflow: hidden;
+.image {
+  overflow: hidden;
 }
 
-.card{
-    margin: 50px;
-    padding: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-    position: relative;
+.card {
+  margin: 50px;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
 }
 
 .card:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
-.card:hover .link-icon{
+.card:hover .link-icon {
   visibility: visible;
 }
 
-.link-icon{
+.link-icon {
   width: 60px;
   height: 60px;
   position: absolute;
@@ -43,69 +43,75 @@
   visibility: hidden;
 }
 
-.link-icon i{
+.link-icon i {
   color: #363636;
   font-size: 2rem;
 }
 
-.card-header{
-    box-shadow: none;
+.card-header {
+  box-shadow: none;
 }
 
-.card-content{
-    padding: 0;
+.card-content {
+  padding: 0;
 }
 
-.image{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(238, 238, 238, 0.205);
-    border-radius: 5px;
-    margin-bottom: 20px;
-    margin-right: 20px;
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(238, 238, 238, 0.205);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
-.spinner{
-    width: 100vw;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.spinner {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .lds-ring {
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #363636;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #363636 transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
   }
-  .lds-ring div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
-    border: 8px solid #363636;
-    border-radius: 50%;
-    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #363636 transparent transparent transparent;
+
+  100% {
+    transform: rotate(360deg);
   }
-  .lds-ring div:nth-child(1) {
-    animation-delay: -0.45s;
-  }
-  .lds-ring div:nth-child(2) {
-    animation-delay: -0.3s;
-  }
-  .lds-ring div:nth-child(3) {
-    animation-delay: -0.15s;
-  }
-  @keyframes lds-ring {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
+}

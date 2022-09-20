@@ -1,8 +1,14 @@
 import "bulma/css/bulma.css";
+import { useEffect } from "react";
 import "./NewsCard.css";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 function NewsCard(props) {
-    return (<a href={props.info.url}>
+    useEffect(()=>{
+        AOS.init();
+    }, []);
+    return (<a href={props.info.url} data-aos="fade-left" data-aos-once="true">
         <div className="card">
             <div className="card-header">
                 <figure className="image is-128x128">
